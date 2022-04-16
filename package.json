@@ -1,0 +1,26 @@
+{
+  "name": "foodwind",
+  "version": "1.0.0",
+  "description": "Learning tailwind by creating food recipes website",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o ./static/dist/output.css --watch"
+  },
+  "keywords": [
+    "Tailwind",
+    "tailwind",
+    "food",
+    "food-recipes",
+    "learn-tailwind"
+  ],
+  "author": "Daniel Rio",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-item {
+    @apply flex items-center;
+    @apply text-gray-400;
+    @apply cursor-pointer;
+    @apply mb-4;
+}
+
+.sidebar-item p {
+    @apply ml-3;
+    @apply transition-all duration-300;
+}
+
+.sidebar-item ion-icon {
+    @apply text-base;
+    @apply transition-all duration-300;
+}
