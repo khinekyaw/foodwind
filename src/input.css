@@ -3,26 +3,25 @@
 @tailwind utilities;
 
 .sidebar-item {
-    @apply flex items-center;
-    @apply text-gray-400;
-    @apply cursor-pointer;
-    @apply mb-4;
+    @apply flex items-center text-gray-400 cursor-pointer mb-5;
 }
 
 .sidebar-item p {
-    @apply ml-3;
-    @apply transition-all duration-300;
+    @apply ml-3 transition-all duration-300;
 }
 
 .sidebar-item ion-icon {
-    @apply text-base;
     @apply transition-all duration-300;
 }
 
-.sidebar-item:active p {
-    @apply text-red-600;
+.sidebar-item.active ion-icon {
+    @apply text-primary-500;
 }
 
-.sidebar-item:active ion-icon {
-    @apply text-orange-500;
+.text-berkshireswash-h1 {
+    @apply font-berkshireswash text-5xl mb-2;
+}
+
+.vl {
+    @apply h-14 border-l-2 border-gray-300 mx-6;
 }

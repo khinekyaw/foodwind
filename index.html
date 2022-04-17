@@ -8,14 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@300;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- main css -->
     <link href="static/dist/output.css" rel="stylesheet" />
     <title>Home</title>
   </head>
-  <body class="bg-rose-50 font-sans">
+  <body class="font-sans text-slate-800 bg-rose-50">
     <!-- sidebar -->
     <div
       class="flex flex-col items-center fixed top-0 left-0 bottom-0 w-48 px-3 bg-white"
@@ -32,42 +36,101 @@
         />
       </div>
       <h1
-        class="text-2xl leading-none font-medium stroke text-center font-cookie mb-1"
+        class="text-lg leading-none font-medium stroke text-center font-berkshireswash mb-1"
       >
         Amelia Watson
       </h1>
       <p class="text-xs text-gray-400 mb-2">Chef de Portie</p>
 
       <div class="flex items-center text-xs py-2 px-3 rounded-full shadow-md">
-        <ion-icon class="text-sm text-rose-600 mr-2" name="cafe"></ion-icon>
+        <ion-icon class="text-sm text-primary-600 mr-2" name="cafe"></ion-icon>
         <span>37</span>
       </div>
 
-      <!-- navigation -->
+      <!-- sidebar navigation -->
       <div class="mt-16">
-        <a class="sidebar-item group" active>
-          <ion-icon class="group-hover:text-orange-500" name="book"></ion-icon>
+        <a class="sidebar-item group active">
+          <ion-icon class="group-hover:text-primary-500" name="book"></ion-icon>
           <p class="group-hover:text-black">Recipes</p>
         </a>
         <a class="sidebar-item group">
-          <ion-icon class="group-hover:text-orange-500" name="heart"></ion-icon>
+          <ion-icon
+            class="group-hover:text-primary-500"
+            name="heart"
+          ></ion-icon>
           <p class="group-hover:text-black">Favorites</p>
         </a>
         <a class="sidebar-item group">
           <ion-icon
-            class="group-hover:text-orange-500"
+            class="group-hover:text-primary-500"
             name="albums"
           ></ion-icon>
           <p class="group-hover:text-black">Courses</p>
         </a>
         <a class="sidebar-item group">
-          <ion-icon class="group-hover:text-orange-500" name="globe"></ion-icon>
+          <ion-icon
+            class="group-hover:text-primary-500"
+            name="globe"
+          ></ion-icon>
           <p class="group-hover:text-black">Community</p>
         </a>
       </div>
       <!-- navigation end -->
     </div>
     <!-- sidebar end -->
+
+    <!-- content -->
+    <div class="ml-48 py-8 px-11">
+      <nav class="flex justify-between items-center mb-11">
+        <!-- search box -->
+        <div class="flex relative items-center">
+          <ion-icon class="text-lg absolute mr-2" name="search"></ion-icon>
+          <input
+            class="w-64 border-b-2 border-gray-300 py-2 pl-6 bg-inherit text-sm outline-none focus:border-primary-400 placeholder:text-gray-500"
+            placeholder="Enter your search request..."
+          />
+        </div>
+        <!-- search box end -->
+
+        <div class="flex items-center">
+          <ion-icon class="text-lg mr-5" name="options"></ion-icon>
+          <button
+            class="bg-primary-500 text-white py-2 px-3 rounded-lg shadow-lg shadow-primary-500/50"
+          >
+            Go to Premium
+          </button>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <div class="flex justify-between items-center mb-11">
+        <div class="flex items-center">
+          <img
+            class="w-20 h-20"
+            src="static/icons/cook-book.png"
+            alt="banner-image"
+          />
+          <div class="ml-5">
+            <h1 class="text-berkshireswash-h1">Only the best recipes!</h1>
+            <p class="text-slate-500">Today's new recipes for you</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-berkshireswash-h1">168</h1>
+            <p class="text-slate-500">Tutorials</p>
+          </div>
+          <div class="vl"></div>
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-berkshireswash-h1">304</h1>
+            <p class="text-slate-500">Recipes</p>
+          </div>
+        </div>
+      </div>
+      <!-- banner end -->
+
+      <div>Content</div>
+    </div>
 
     <!-- icons -->
     <script
