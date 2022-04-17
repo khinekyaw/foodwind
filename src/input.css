@@ -18,3 +18,11 @@
     @apply text-base;
     @apply transition-all duration-300;
 }
+
+.sidebar-item:active p {
+    @apply text-red-600;
+}
+
+.sidebar-item:active ion-icon {
+    @apply text-orange-500;
+}

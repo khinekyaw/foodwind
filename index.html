@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
     <!-- main css -->
-    <link href="static/dist/output.css" rel="stylesheet">
+    <link href="static/dist/output.css" rel="stylesheet" />
     <title>Home</title>
-</head>
-<body class="bg-rose-50 font-sans">
-    <div data-include="static/include/sidebar.html"></div>
+  </head>
+  <body class="bg-rose-50 font-sans">
+    <!-- sidebar -->
+    <div
+      class="flex flex-col items-center fixed top-0 left-0 bottom-0 w-48 px-3 bg-white"
+    >
+      <h1 class="font-bold text-xl mt-7 mb-11">Foodwind</h1>
+
+      <div
+        class="w-16 h-16 rounded-full p-1 mb-3 overflow-hidden border-2 border-orange-500"
+      >
+        <img
+          class="rounded-full"
+          src="https://randomuser.me/api/portraits/women/91.jpg"
+          alt="profile-image"
+        />
+      </div>
+      <h1
+        class="text-2xl leading-none font-medium stroke text-center font-cookie mb-1"
+      >
+        Amelia Watson
+      </h1>
+      <p class="text-xs text-gray-400 mb-2">Chef de Portie</p>
+
+      <div class="flex items-center text-xs py-2 px-3 rounded-full shadow-md">
+        <ion-icon class="text-sm text-rose-600 mr-2" name="cafe"></ion-icon>
+        <span>37</span>
+      </div>
+
+      <!-- navigation -->
+      <div class="mt-16">
+        <a class="sidebar-item group" active>
+          <ion-icon class="group-hover:text-orange-500" name="book"></ion-icon>
+          <p class="group-hover:text-black">Recipes</p>
+        </a>
+        <a class="sidebar-item group">
+          <ion-icon class="group-hover:text-orange-500" name="heart"></ion-icon>
+          <p class="group-hover:text-black">Favorites</p>
+        </a>
+        <a class="sidebar-item group">
+          <ion-icon
+            class="group-hover:text-orange-500"
+            name="albums"
+          ></ion-icon>
+          <p class="group-hover:text-black">Courses</p>
+        </a>
+        <a class="sidebar-item group">
+          <ion-icon class="group-hover:text-orange-500" name="globe"></ion-icon>
+          <p class="group-hover:text-black">Community</p>
+        </a>
+      </div>
+      <!-- navigation end -->
+    </div>
+    <!-- sidebar end -->
 
     <!-- icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!-- tools -->
-    <script src="static/js/csi.min.js"></script>
-</body>
+  </body>
 </html>
